@@ -1,18 +1,15 @@
-## Getting Started
+# Taller de Estructuras Líneales
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Información del Estudiante
+* **Nombre:** [Eisner Fabian Muñoz Zuñiga]
 
-## Folder Structure
+## Descripción del Taller
+Solución a un taller de programación en Java enfocado en la manipulación de **Arreglos estáticos**, **ArrayLists** y **Matrices**. El proyecto implementa una arquitectura modular de 3 capas por cada ejercicio:
+* **Servicio:** Procesa la lógica, algoritmos y cálculos matemáticos.
+* **Vista:** Gestiona el formato de salida por consola e interacción con el usuario.
+* **Controlador:** Coordina la ejecución entre el servicio y la vista.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Instrucciones para Ejecutar el Programa
+1. Clonar o descargar este repositorio:
+   ```bash
+   git clone <https://github.com/FabianMZ1401/TALLER-DE-ESTRUCTURAS-LINEALES.git>
