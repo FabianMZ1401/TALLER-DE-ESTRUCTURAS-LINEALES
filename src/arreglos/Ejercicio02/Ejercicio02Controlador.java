@@ -1,19 +1,18 @@
-package arreglos.ejercicio2;
+package arreglos.ejercicio02;
 
-public class Main {
-    private static final int LINEAS_A_IMPRIMIR = 10;
+public class Ejercicio02Controlador {
+    private final ArregloParesServicio servicio;
+    private final ArregloParesVista vista;
 
-    public static void main(String[] args) {
-        GeneradorNumeros generador = new GeneradorNumeros();
-        ImpresorArreglos impresor = new ImpresorArreglos();
+    public Ejercicio02Controlador() {
+        this.servicio = new ArregloParesServicio();
+        this.vista = new ArregloParesVista();
+    }
 
-        int[] pares = generador.generarPrimerosCienPares();
+    public void ejecutar() {
+        int[] pares = servicio.generarPrimerosPares(100);
 
-        System.out.println("=== Impreso en una sola linea ===");
-        impresor.imprimirEnUnaLinea(pares);
-
-        System.out.println();
-        System.out.println("=== Impreso en " + LINEAS_A_IMPRIMIR + " lineas ===");
-        impresor.imprimirEnVariasLineas(pares, LINEAS_A_IMPRIMIR);
+        vista.mostrarEnUnaLinea(pares);
+        vista.mostrarEnDiezLineas(pares);
     }
 }
